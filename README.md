@@ -9,7 +9,7 @@ HTML/SASS klasser = my-class
 Javascript variablar och funktioner = camelCase
 Javascript klasser/objekt = MyClass
 
-Arbetsflöde med Git
+GIT TIPS & TRICKS
 - Hålla commits små 
 - Göra git pull från main branch innan man gör en pull request (förminskar merge konflikter)
 - Minst två "approves" på pull-requests innan merge.
