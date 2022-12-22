@@ -1,0 +1,49 @@
+@mixin centerContent(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin direction($direction){
+    flex-direction: $direction;
+}
+@mixin centerColumn(){
+    display: flex;
+    justify-content: center;
+}
+@mixin wrap(){
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
+    @include centerColumn();
+    @include direction(column);
+    h2{
+        text-align: center
+    }
+    ul{
+        @include wrap();
+        @include centerContent();
+        padding: 0px;
+        margin: 0%;
+        height: 100%;
+        width: 100%;
+        div{
+            margin: 0.1%;
+            border-radius: 4px;
+            @include centerContent();
+            @include direction(column);
+            width: 20em;
+            height: 25em;
+            background-color: $container-color;
+            h3{
+                background-color: $button-color;
+                border-radius: 8px;
+                margin: 3%;
+            }
+            img{
+                margin: 3%;
+            }
+        }
+    }
+}
