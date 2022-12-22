@@ -2,32 +2,32 @@
 	"food" : [
 	
 		{
-      "disch" : "Hamburgare med pommes frites",
+      "dish" : "Hamburgare med pommes frites",
 		  "price" : "120 kr",
 		  "hours" : "17:00"
     },	
 		{
-      "disch" : "Oxfile med stekt potatis",
+      "dish" : "Oxfile med stekt potatis",
 	  	"price" : "280 kr",
 		  "hours" : "18:00"
     },	
 		{
-      "disch" : "Champagne låda med jordgubbar",
+      "dish" : "Champagne låda med jordgubbar",
 		  "price" : "670 kr",
 		  "hours" : "20:00"
     },	
 		{
-      "disch" : "Fisklåda med sås och potatis",
+      "dish" : "Fisklåda med sås och potatis",
 		  "price" : "200 kr",
 		  "hours" : "20:00"
     },	
 		{
-       "disch" : "Varm smörgås med olika pålägg",
+       "dish" : "Varm smörgås med olika pålägg",
 		   "price" : "175 kr",
 		   "hours" : "20:00"
     },	
 		{
-       "disch" : "Ribs med bakat potatis och sallad",
+       "dish" : "Ribs med bakat potatis och sallad",
 		   "price" : "590 kr",
 		    "hours" : "22:00"
     }	
