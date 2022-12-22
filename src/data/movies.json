@@ -144,7 +144,7 @@
             "director": "Damien Chazelle",
             "actors": ["Diego Calva", "Margot Robbie", "Brad Pitt", "Li Jun Li", "Jovan Adepo"],
             "posterUrl": "https://www.themoviedb.org/t/p/original/wjOHjWCUE0YzDiEzKv8AfqHj3ir.jpg",
-            "imageUrlUrl": "https://www.themoviedb.org/t/p/original/wANywQNuUmxLaX5ND7MZvYvPDBg.jpg",
+            "imageUrl": "https://www.themoviedb.org/t/p/original/wANywQNuUmxLaX5ND7MZvYvPDBg.jpg",
             "videoUrl": "https://www.youtube.com/watch?v=t7HT83wkVss",
             "genres": ["Drama", "Komedi"],
             "ageRestriction": "R",
