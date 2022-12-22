@@ -471,7 +471,7 @@
             "languages": ["En", "Sv"],
             "director": "John Doe",
             "actors": ["John Doe", "Jane Doe", "James jameson", "Robert Robertsson", "Jennifer Jayjay"],
-            "posterUrlUrl": "https://picsum.photos/540/660",
+            "posterUrl": "https://picsum.photos/540/660",
             "imageUrl": "http://placekitten.com/200/300",
             "videoUrl": "",
             "genres": ["Drama", "Science Fiction"],
