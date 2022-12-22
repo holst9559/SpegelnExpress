@@ -17,3 +17,7 @@ GIT TIPS & TRICKS
 - Lägg gärna upp bilder eller videor i din Pull-Request :)
 
 
+DAILY SCRUM
+  -2022-12-22 Torsdag
+    -Sprinten påbörjad, alla valde ett PBI från sprint backlog att börja arbeta med
+    -Nästa daily scrum blir 2022-12-28, mjukstart pga röda dagar
