@@ -19,6 +19,8 @@ function displayMovies (){
                 // get the heading
                 let heading = document.querySelector('.heading-1')
                 heading.innerText = 'På Bion Just Nu'   
+                createMovieCard(movie)
+               
 
             }
         }
@@ -74,7 +76,7 @@ function createMovieCard(movie){
        title.innerText = `${movie.title}`
        movieCard.appendChild(imgDiv)
        movieCard.appendChild(title)
-        movieCard
+       
       
        moviesList.appendChild(movieCard)
     
