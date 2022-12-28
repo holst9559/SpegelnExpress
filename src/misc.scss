@@ -61,6 +61,10 @@ ul, menu {
 a {
     color: $text-color;
     text-decoration: none;
+
+    &:hover {
+        filter: brightness(150%);
+    }
 }
 
 button {

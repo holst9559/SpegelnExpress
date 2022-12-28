@@ -1,21 +1,5 @@
 @import 'variables.scss';
 @import 'misc.scss';
-@mixin centerContent(){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@mixin direction($direction){
-    flex-direction: $direction;
-}
-@mixin centerColumn(){
-    display: flex;
-    justify-content: center;
-}
-@mixin wrap(){
-    display: flex;
-    flex-wrap: wrap;
-}
 
 body, html{
     overflow-y: scroll;
