@@ -1,0 +1,26 @@
+@import 'variables.scss';
+@import 'misc.scss';
+@mixin centerContent(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin direction($direction){
+    flex-direction: $direction;
+}
+@mixin centerColumn(){
+    display: flex;
+    justify-content: center;
+}
+@mixin wrap(){
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0%;
+    background-color: $background-color;
+    color: $text-color;
+}
