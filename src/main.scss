@@ -1,5 +1,6 @@
 @import 'variables.scss';
 @import 'misc.scss';
+@import 'content.scss';
 @mixin centerContent(){
     display: flex;
     justify-content: center;

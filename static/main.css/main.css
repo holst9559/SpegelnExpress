@@ -1,0 +1,46 @@
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+section h2 {
+  text-align: center;
+}
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+}
+section ul div {
+  margin: 0.1%;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20em;
+  height: 25em;
+  background-color: #3E3737;
+}
+section ul div h3 {
+  background-color: #1f1717;
+  border-radius: 8px;
+  margin: 3%;
+}
+section ul div img {
+  margin: 3%;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0%;
+  background-color: #202020;
+  color: #A88135;
+}
