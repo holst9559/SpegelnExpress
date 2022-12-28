@@ -16,6 +16,10 @@
         border: 3px $background-color;
         border-style: none solid none none;
         padding: 0 1.5em;
+
+        &:last-child {
+            border: none;
+        }
     }
 
     a {
