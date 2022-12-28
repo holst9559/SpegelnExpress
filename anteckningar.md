@@ -16,3 +16,8 @@ Problem: Inga än så länge.
 Patrik:
 
 Gjort: Flyttade kort JSON-mat-menyn till "Testing", flyttade kortet footer till "InProgress" och skapade ny branch som heter "footerBranch". Ska göras: Påbörja footer-kortet med html/sass. Problem: Kunde först inte uppdatera main eller min nya branch med git pull men det löste sig med git pull origin main. Fick hjälp av gruppen. Tack!
+
+Yvette:
+I wrote the functions to display the movies on the start page and moved the cards to review.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
