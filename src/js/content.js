@@ -3,8 +3,8 @@ const navMenu = document.querySelectorAll(".nav-items");
 const pagesArray = [];
 
 const openContact = {
-    title: "Öppettider & Kontakt",
-    textContent: `
+  title: "Öppettider & Kontakt",
+  textContent: `
     <section id="content-text" class="content-text">
     <h2>ÖPPETTIDER</h2>
     <p>Måndag till fredag: 13.30-23.00</p>
@@ -41,20 +41,19 @@ const openContact = {
     <section class="content-text">
     <h2>PRESSVISNINGAR</h2>
     <p>Skicka din förfrågan till John Doe via johndoe@sundsvallspegeln.se</p>
-    </section>`
+    </section>`,
 };
 
-pagesArray.push(openContact)
+pagesArray.push(openContact);
 
 navMenu.forEach((menu) => {
-    menu.addEventListener("click", (e) => {
-        for (let i = 0; i < pagesArray.length; i++) {
-            if (e.target.innerText.includes(pagesArray[i].title)) {
-                textBody.innerHTML = pagesArray[i].textContent;
-            }
-            else {
-                textBody.innerHTML = "";
-            }
-        }
-    })
-})
+  menu.addEventListener("click", (e) => {
+    for (let i = 0; i < pagesArray.length; i++) {
+      if (e.target.innerText.includes(pagesArray[i].title)) {
+        textBody.innerHTML = pagesArray[i].textContent;
+      } else {
+        textBody.innerHTML = "";
+      }
+    }
+  });
+});
