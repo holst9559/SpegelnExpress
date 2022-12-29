@@ -24,11 +24,11 @@ export default class NavMenuTrigger {
 
     closeAll() {
         const openMenus = document.querySelectorAll('.dropdown-menu');
-        const selectedButtons = document.querySelectorAll('.dropdown-toggle');
+        const buttons = document.querySelectorAll('.dropdown-toggle');
         openMenus.forEach(menu => {
             menu.classList.remove("show");
         });
-        selectedButtons.forEach(button => {
+        buttons.forEach(button => {
             button.classList.remove("selected");
         });
     }
