@@ -1,26 +1,19 @@
 @import 'variables.scss';
 @import 'misc.scss';
-@mixin centerContent(){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@mixin direction($direction){
-    flex-direction: $direction;
-}
-@mixin centerColumn(){
-    display: flex;
-    justify-content: center;
-}
-@mixin wrap(){
-    display: flex;
-    flex-wrap: wrap;
-}
 
-body{
+body, html{
     overflow-y: scroll;
     overflow-x: hidden;
     margin: 0%;
     background-color: $background-color;
     color: $text-color;
+    font-family: sans-serif;
+
+    @media (min-width: $bp-large) {
+        font-size: 24px;
+    }
 }
+
+
+@import 'sections/header.scss';
+@import 'sections/mainNav.scss';
