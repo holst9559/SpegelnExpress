@@ -1,1 +1,3 @@
-//Här importerar vi alla javascript filer 
+import NavMenuTrigger from "./navMenu.js";
+
+new NavMenuTrigger();
