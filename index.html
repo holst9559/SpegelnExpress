@@ -4,12 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet"  href="src/main.css">
     <title>Document</title>
-</head>
+</head>   
 <body>
-    <div class="showing-now">
+    <header class="header">
+        <a href="index.html">
+            <img class="header-logo" src="./src/assets/biospegeln_100_white.png" alt="Spegeln logo">
+        </a>
+
+        <ul class="socials-list">
+            <li>
+                <a href="/"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="/"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="/"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="/"><i class="fa-solid fa-envelope"></i></a>
+            </li>
+        </ul>
+    </header>
+
+    <nav class="main-nav">
+        <button class="toggle-menu"><i class="fa-solid fa-bars"></i></button>
+
+        <menu class="nav-menu">
+            <li>
+                <a href="/">Öppettider & Kontakt</a>
+            </li>
+            <li>
+                <a href="/">Om Spegeln</a>
+            </li>
+            <li>
+                <a href="/">Biljettinfo</a>
+            </li>
+            <li>
+                <a href="/">Vill du ha vårt nyhetsbrev?</a>
+            </li>
+            <li>
+                <a href="/">Köp presentkort</a>
+            </li>
+        </menu>
+    </nav>
+
+    <section class="content-right-now">
+        <div class="showing-now">
         <h1 class="heading-1"></h1>
         <div class="movies-now "></div>
     </div>
@@ -17,9 +61,9 @@
         <h1 class="heading-2"></h1>
         <div class="movies-later "></div>
     </div>
-    
-   
-    <script src="./src/js/movies.js" type="module"></script>
+    </section>
+    <script src="src/js/movies.js" type = "module"></script>
+
 </body>
 
     
