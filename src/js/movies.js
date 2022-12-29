@@ -18,13 +18,13 @@ class Movies {
       if(new Date(movie.releaseDate ).getFullYear() === new Date().getFullYear()){
                   // get the heading
        let heading = document.querySelector('.heading-1')
-         heading.innerText = 'På Bion Just Nu' 
+         heading.innerText = 'PÅ BION JUST NU' 
          Movies.createMovie(movie)
          
                 
             }else{
             let heading = document.querySelector('.heading-2')
-            heading.innerText = 'kommer snårt'
+            heading.innerText = 'KOMMER SNART'
             Movies.createMovie(movie)
                 
             }
@@ -47,6 +47,7 @@ class Movies {
         image.src = movie.imageUrl
  
         imgDiv.appendChild(image)
+        
  
         // create title
         let title = document.createElement('p')
