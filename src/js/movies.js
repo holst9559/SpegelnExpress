@@ -7,22 +7,8 @@ let futureMovies = document.querySelector('.movies-later ')
 
 
 class Movies {
-    constructor(title,description,country,languages,director, actors, posterUrl,imageUrl,videoUrl,genres,ageRestriction,releaseDate,screeningTimes,tags,rating){
-        this.title = title;
-        this.description = description;
-        this.country=country;
-        this.languages = languages;
-        this.director = director;
-        this.actors = actors;
-        this.posterUrl = posterUrl;
-        this.imageUrl = imageUrl;
-        this.videoUrl = videoUrl;
-        this.genres = genres;
-        this.ageRestriction = ageRestriction;
-        this.releaseDate = releaseDate;
-        this.screeningTimes = screeningTimes;
-        this.tags = tags;
-        this.rating = rating;     
+    constructor(movieData){
+        this.movieData = movieData
 
     }
 
@@ -40,8 +26,7 @@ class Movies {
             let heading = document.querySelector('.heading-2')
             heading.innerText = 'kommer snårt'
             Movies.createMovie(movie)
-               
-            
+                
             }
             
        
