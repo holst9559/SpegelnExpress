@@ -47,7 +47,14 @@ class Movies {
         image.src = movie.imageUrl
  
         imgDiv.appendChild(image)
-        
+        imgDiv.addEventListener('click', function(){
+            console.log(movie)
+            window.location.href = 'movie.html'
+           localStorage.setItem('movie', JSON.stringify(movie))
+          
+    
+           
+        })
  
         // create title
         let title = document.createElement('p')
