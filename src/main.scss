@@ -16,14 +16,6 @@ body, html{
 }
 
 
-    font-family: sans-serif;
-
-
-
-    @media (min-width: $bp-large) {
-        font-size: 24px;
-    }
-}
 
 * {
     font-family: sans-serif;
@@ -33,4 +25,5 @@ body, html{
 @import 'sections/header.scss';
 @import 'sections/mainNav.scss';
 @import 'sections/sidebarNav.scss';
+@import 'sections/moviePage.scss';
 
