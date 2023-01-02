@@ -60,7 +60,7 @@ class Movies {
  
         // create title
         let title = document.createElement('p')
-        title.innerText = `${movie.title}`
+        title.innerText = movie.title.toUpperCase()
         movieCard.appendChild(imgDiv)
         movieCard.appendChild(title)
         
