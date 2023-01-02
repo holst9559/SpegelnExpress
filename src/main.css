@@ -326,7 +326,7 @@ button {
   grid-template-columns: repeat(3, 1fr);
 }
 .movie-content .movies-now .img-div, .movie-content .movies-later .img-div {
-  width: 400px;
+  width: 350px;
   height: 600px;
 }
 .movie-content .movies-now .img-div img, .movie-content .movies-later .img-div img {
