@@ -9,7 +9,3 @@ const api = new APIAdapter();
 const movies = await api.fetchMovies();
 const menu = await api.fetchMenu();
 
-
-
-
-

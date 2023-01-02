@@ -27,10 +27,13 @@ body, html{
 
 * {
     font-family: sans-serif;
-}
 
+    @media (min-width: $bp-large) {
+        font-size: 24px;
+    }
+}
 
 @import 'sections/header.scss';
 @import 'sections/mainNav.scss';
 @import 'sections/sidebarNav.scss';
-
+@import 'sections/content.scss';
