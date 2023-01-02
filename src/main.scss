@@ -1,3 +1,5 @@
+
+
 @import 'variables.scss';
 @import 'misc.scss';
 
@@ -9,6 +11,14 @@ body, html{
     height: 100vh;
     background-color: $background-color;
     color: $text-color;
+
+
+}
+
+
+    font-family: sans-serif;
+
+
 
     @media (min-width: $bp-large) {
         font-size: 24px;
