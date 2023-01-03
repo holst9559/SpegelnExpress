@@ -14,8 +14,10 @@ class Movies {
 
 
      static displayMovies(){
+        let currentYear = new Date().getFullYear()
+        let previousYear = currentYear - 1
         movies.movies.forEach(movie =>{
-      if(new Date(movie.releaseDate ).getFullYear() === new Date().getFullYear()){
+      if(new Date(movie.releaseDate ).getFullYear() === previousYear){
                   // get the heading
        let heading = document.querySelector('.heading-1')
          heading.innerText = 'PÅ BION JUST NU' 
@@ -58,11 +60,11 @@ class Movies {
  
         // create title
         let title = document.createElement('p')
-        title.innerText = `${movie.title}`
+        title.innerText = movie.title.toUpperCase()
         movieCard.appendChild(imgDiv)
         movieCard.appendChild(title)
         
-         new Date(movie.releaseDate ).getFullYear() === new Date().getFullYear()?  moviesList.appendChild(movieCard):
+        new Date(movie.releaseDate ).getFullYear() === new Date().getFullYear()-1 ?  moviesList.appendChild(movieCard):
          futureMovies.appendChild(movieCard)
 
     }

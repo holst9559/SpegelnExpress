@@ -4,14 +4,15 @@
 @import 'misc.scss';
 
 body, html{
-    overflow-y: scroll;
-    overflow-x: hidden;
     margin: 0%;
     width: 100vw;
     height: 100vh;
     background-color: $background-color;
     color: $text-color;
+
 }
+
+
 
 * {
     font-family: sans-serif;
@@ -24,4 +25,7 @@ body, html{
 @import 'sections/header.scss';
 @import 'sections/mainNav.scss';
 @import 'sections/sidebarNav.scss';
+@import 'sections/moviePage.scss';
+@import 'sections/movies.scss';
 @import 'sections/content.scss';
+
