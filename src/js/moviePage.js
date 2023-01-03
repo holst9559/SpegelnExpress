@@ -1,11 +1,45 @@
 
-let movieContainer = document.querySelector('.container')
+let movieContainer = document.querySelector('.movie-container')
 
 let movie = JSON.parse(localStorage.getItem('movie'))
 
 console.log('m',movie)
 
 function showSingleMovie (){
+
+     // get movie poster and image
+
+     let imagesParent = document.createElement('div')
+     imagesParent.classList.add('images-parent')
+     
+      // create image div
+      let imgContainer= document.createElement('div')
+      imgContainer.classList.add('img-container')
+ 
+      // create image
+      let image = document.createElement('img')
+      image.src = movie.imageUrl
+ 
+      imgContainer.appendChild(image)
+ 
+      // create poster div
+      let posterContainer= document.createElement('div')
+      posterContainer.classList.add('poster-container')
+ 
+      // create image
+      let poster = document.createElement('img')
+      poster.src = movie.posterUrl
+ 
+      posterContainer.appendChild(poster)
+ 
+      imagesParent.append(imgContainer,posterContainer)
+
+      
+
+    // create container for the text section
+
+    let textContainer = document.createElement('div')
+    textContainer.classList.add('text-container')
     // create movie title
     let heading = document.createElement('h1')
     heading.classList.add = 'movie-title'
@@ -28,22 +62,22 @@ function showSingleMovie (){
 
     // get director info
     let movieDir = document.createElement('span')
-    movieDir.innerText = `Regl:${movie.director} | `
+    movieDir.innerHTML = `<span class= 'title'>Regl</span>:${movie.director} | `
 
     // get actors info
     let movieActors = document.createElement('span')
     movieActors.classList.add('movie-actors')
-    movieActors.innerText = `Skådespelare:${movie.actors.toString()} | `
+    movieActors.innerHTML = `<span class='title'>Skådespelare</span>:${movie.actors.toString()} | `
 
     // get country info
     let movieLocation = document.createElement('span')
     movieLocation.classList.add('movie-location')
-    movieLocation.innerText = `Land:${movie.country} | `
+    movieLocation.innerHTML = `<span class='title'>Land:</span>${movie.country} | `
 
     // get age limit
     let ageLimit = document.createElement('span')
    ageLimit.classList.add('movie-age')
-    ageLimit.innerText = `Åldesgräns:${movie.ageRestriction}`
+    ageLimit.innerHTML = `<span class='title'>Åldesgräns:</span>${movie.ageRestriction}`
 
     movieSpecs.append(movieDir,movieActors,movieLocation,ageLimit)
 
@@ -83,40 +117,11 @@ function showSingleMovie (){
     }
 
 
-    // get movie poster and image
-
-    let imagesParent = document.createElement('div')
-    imagesParent.classList.add('images-parent')
-    
-     // create image div
-     let imgContainer= document.createElement('div')
-     imgContainer.classList.add('img-container')
-
-     // create image
-     let image = document.createElement('img')
-     image.src = movie.imageUrl
-
-     imgContainer.appendChild(image)
-
-     // create poster div
-     let posterContainer= document.createElement('div')
-     posterContainer.classList.add('poster-container')
-
-     // create image
-     let poster = document.createElement('img')
-     poster.src = movie.posterUrl
-
-     posterContainer.appendChild(poster)
-
-     imagesParent.append(imgContainer,posterContainer)
-
-
-
-    movieContainer.append(heading,genreEl,description,movieSpecs, ScreeningCont,imagesParent)
-
    
+    textContainer.append(heading,genreEl,description,movieSpecs, ScreeningCont)
+    movieContainer.append(imagesParent,textContainer)
 
-  
+    
 
 }
 
