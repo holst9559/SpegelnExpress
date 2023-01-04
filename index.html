@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="src/main.css">
-    
+    <link rel="stylesheet"  href="src/main.css">
     <title>Document</title>
-</head>
+</head>   
 <body>
     <header class="header">
         <a href="index.html">
@@ -36,19 +35,19 @@
 
         <menu class="nav-menu">
             <li>
-                <a href="/">Öppettider & Kontakt</a>
+                <a href="/contact.html">Öppettider & Kontakt</a>
             </li>
             <li>
-                <a href="/">Om Spegeln</a>
+                <a href="/about.html">Om Spegeln</a>
             </li>
             <li>
-                <a href="/">Biljettinfo</a>
+                <a href="/tickets.html">Biljettinfo</a>
             </li>
             <li>
-                <a href="/">Vill du ha vårt nyhetsbrev?</a>
+                <a href="/news.html">Vill du ha vårt nyhetsbrev?</a>
             </li>
             <li>
-                <a href="/">Köp presentkort</a>
+                <a href="/giftcard.html">Köp presentkort</a>
             </li>
         </menu>
     </nav>
@@ -139,20 +138,23 @@
         </ul>
     </nav>
 
-    <section class="content-right-now">
-        <h2>På Bio just nu</h2>
-        <ul id="just-nu">
-
-            <!-- card template
-            <div>
-                <img src="src/assets/avatar.jpeg" alt="">
-                 <h3>Lorem ipsum dolor sit amet consectetur </h3>
-             </div>
-            -->
-
-        </ul>
-    </section>
-    <script src="src/js/main.js" type="module""></script>
+    
+    <div class="content-body" id="contentBody">
+        <section class="content-right-now movie-content">
+            <div class="showing-now">
+            <h1 class="heading-1"></h1>
+            <div class="movies-now "></div>
+        </div>
+        <div class="showing-later">
+            <h1 class="heading-2"></h1>
+            <div class="movies-later "></div>
+        </div>
+        </section>
+        
+    </div>
+    <script src="src/js/movies.js" type = "module"></script>
+ 
+    <script src="src/js/main.js" type="module"></script>
 </body>
 
 </html>
