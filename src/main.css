@@ -52,6 +52,9 @@ a:hover {
 button {
   cursor: pointer;
 }
+button:hover {
+  filter: brightness(150%);
+}
 
 body, html {
   margin: 0%;
@@ -169,7 +172,10 @@ body, html {
   text-align: center;
   font-size: 16px;
   font-weight: bold;
+  color: #A88135;
+  width: 100%;
   background-color: #1f1717;
+  border: none;
   border-radius: 5px;
 }
 .dropdown-toggle::after {
