@@ -18,52 +18,54 @@ export default class UrlHandlerClass {
   };
 
   urlLocationHandler = async () => {
-    const host = "https://127.0.0.1:5500/";
-    const hostOnline = "https://3xer.github.io/SundsvallsSpegeln/";
-    if (window.location.href == hostOnline) {
+    const host = "127.0.0.1";
+    const hostOnline = "3xer.github.io";
+    const hostOnlineHref = "https://3xer.github.io/SundsvallsSpegeln/"
+    if (window.location.hostname == hostOnline) {
+      
       const urlRoutes = {
         404: {
-          template: hostOnline + "/content/404.html",
+          template: hostOnlineHref + "/content/404.html",
           title: "",
           description: "",
         },
         "/": {
-          template: hostOnline + "/content/homepage.html",
+          template: hostOnlineHref + "/content/homepage.html",
           title: "",
           description: "",
         },
         "/index.html": {
-          template: hostOnline + "/content/homepage.html",
+          template: hostOnlineHref + "/content/homepage.html",
           title: "",
           description: "",
         },
         "/movies.html": {
-          template: hostOnline + "/content.movies.html",
+          template: hostOnlineHref + "/content.movies.html",
           title: "",
           description: "",
         },
         "/contact.html": {
-          template: hostOnline + "/content/contact.html",
+          template: hostOnlineHref + "/content/contact.html",
           title: "",
           description: "",
         },
         "/about.html": {
-          template: hostOnline + "/content/about.html",
+          template: hostOnlineHref + "/content/about.html",
           title: "",
           description: "",
         },
         "/tickets.html": {
-          template: hostOnline + "/content/tickets.html",
+          template: hostOnlineHref + "/content/tickets.html",
           title: "",
           description: "",
         },
         "/news.html": {
-          template: hostOnline + "/content/news.html",
+          template: hostOnlineHref + "/content/news.html",
           title: "",
           description: "",
         },
         "/giftcard.html": {
-          template: hostOnline + "/content/giftcard.html",
+          template: hostOnlineHref + "/content/giftcard.html",
           title: "",
           description: "",
         },
@@ -78,7 +80,7 @@ export default class UrlHandlerClass {
       );
       document.getElementById("contentBody").innerHTML = html;
       console.log(location);
-    } else {
+    } else if (window.location.hostname == host){
       const urlRoutes = {
         404: {
           template: "/content/404.html",
