@@ -67,6 +67,16 @@ section ul div img {
   margin: 3%;
 }
 
+.visningstider {
+  background-color: #3E3737;
+  border: 0.2em solid #202020;
+  width: 90%;
+  margin: 4.5%;
+}
+.visningstider h2 {
+  text-align: center;
+}
+
 ul, menu {
   list-style: none;
 }

@@ -79,10 +79,17 @@ section{
                 margin: 3%;
             }
         }
-}    
+}
+.visningstider{
+    background-color: $container-color;
+    border: .2em solid $background-color;
+    width: 90%;
+    margin: 4.5%;
+    h2{
+        text-align: center;
 
-
-
+    }
+}
 ul, menu {
     list-style: none;
 }
