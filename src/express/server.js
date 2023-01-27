@@ -1,7 +1,7 @@
 import express from "express";
 import { engine } from "express-handlebars";
 
-import { getMovies, getMovie } from "./src/data/moviesData.js";
+import { getMovies, getMovie } from "../data/moviesData.js";
 
 const app = express();
 app.engine("handlebars", engine());
@@ -53,4 +53,4 @@ app.get("/movie/:movieId", async (req, res) => {
 
 app.use("/src", express.static("./src"));
 
-app.listen(5080);
+export default app;

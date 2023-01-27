@@ -13,3 +13,9 @@ export async function getMovie(id) {
     const content = await res.json();
     return content.data;
 }
+
+export default async function getData() {
+    const res = await fetch(APIData + "/movies")
+    const content = await res.json();
+    return content.data;
+}
