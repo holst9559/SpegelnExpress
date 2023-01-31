@@ -1,10 +1,17 @@
 import express from "express";
 import { engine } from "express-handlebars";
+import { marked } from "marked";
 
 import { getMovies, getMovie } from "../data/moviesData.js";
 
 const app = express();
-app.engine("handlebars", engine());
+
+
+app.engine("handlebars", engine({
+    helpers: {
+        markdown: md => marked(md),
+    },
+}));
 app.set("view engine", "handlebars");
 app.set("views", "./handlebars-templates");
 
